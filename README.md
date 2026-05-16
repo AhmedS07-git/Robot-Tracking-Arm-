@@ -16,4 +16,21 @@ cmake --build
 bash
 ./build/robot_system
 
+## Current Status
+### Implemented Features
+-Display Robot Status
+-Update Robot Speed
+-Basic Robotic Arm Control
+
+### Features Still in Progres
+-Advanced Camera Tracking
+-Target detection improvemets
+-Save/load system Improvemnets
+
+### AI Assistance
+AI was used to help troubleshoot compiler issues, explain CMake setup, and assist with debugging and project organization.
+
+See:
+docs/ai_collaboration.md
+
 Muhammad Shahid - CIS 25 Final
