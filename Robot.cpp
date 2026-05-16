@@ -58,10 +58,29 @@ void Robot::moveArm(int angle) {
 
 void Robot::displayStatus() const {
 
-    cout << "Robot Position: ("
-    << xPosition << ", "
-    << yPosition << ")" << endl;
+    cout << "Robot Status" << endl;
 
+    cout << "Position: ("
+         << xPosition << ", "
+         << yPosition << ")" << endl;
+
+    cout << "Speed: " 
+         << speed << endl;
+
+    cout << "Direction: "
+         << direction << endl;
+
+    cout << "Arm Angle: "
+         << armAngle << endl;
+
+    cout << "Tracking Status: ";
+
+    if (trackingEnabled) {
+        cout << "Enabled" << endl;
+    
+    } else {
+        cout << "Disabled" << endl;
+    }
 }
 int Robot::getXPosition() const {
     return xPosition;

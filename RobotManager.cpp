@@ -36,7 +36,8 @@ void RobotManager::controlArm() {
 }
 
 void RobotManager::displayRobotStatus() const {
-    cout << "Displaying robot status." << endl;
+    
+    robot.displayStatus();
 
 }
 
