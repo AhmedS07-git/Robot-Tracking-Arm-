@@ -24,7 +24,23 @@ bool RobotManager::openCamera() {
 }
 
 void RobotManager::moveRobot() {
-    cout << "Robot is moving." << endl;
+    int newSpeed;
+
+    cout << "Enter new robot speed: ";
+    cin >> newSpeed;
+
+    if (newSpeed < 0) {
+        
+        cout << "Invalid speed. Speed cannot be negative." << endl;
+
+    } else {
+        robot.setSpeed(newSpeed);
+
+        cout << "Robot speed updated to "
+             << robot.getSpeed()
+             << endl;
+    }
+
 }
 
 void RobotManager::trackTarget() {
