@@ -3,10 +3,11 @@
 It's a C++ robot tracking sim programt that ses OpenCV camera input and object-oriented program.
 
 Features
-- moves the robot's position
-- controls the angle of the arm
-- display's the robot status
-- load and save robot data
+- Move the robot's position
+- Controls the angle of the arm
+- Display the robot status
+- Load and save robot data
+- Basic Camera tracking simulation
 
 Building
 
