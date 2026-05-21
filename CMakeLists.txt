@@ -16,3 +16,9 @@ Sensor.cpp
 )
 
 target_link_libraries(robot_system ${OpenCV_LIBS}) 
+
+enable_testing()
+
+add_executable(test_main tests/test_main.cpp Robot.cpp)
+
+add_test(NAME RobotTests COMMAND test_main)
