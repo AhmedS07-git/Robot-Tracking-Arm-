@@ -48,7 +48,22 @@ void RobotManager::trackTarget() {
 }
 
 void RobotManager::controlArm() {
-    cout << "Robotic arm moving." << endl;
+   
+    int angle;
+
+    cout << "Enter arm angle (0-180): ";
+    cin >> angle;
+
+    if (angle < 0 || angle > 180) {
+
+        cout << "Invalid angle." << endl;
+    } else {
+        robot.moveArm(angle);
+
+        cout << " Arm angle updated to "
+             << robot.getArmAngle()
+             << endl;
+    }
 }
 
 void RobotManager::displayRobotStatus() const {
